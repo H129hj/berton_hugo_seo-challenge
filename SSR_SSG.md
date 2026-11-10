@@ -1,9 +1,20 @@
-# SSR_SSG.md : à compléter
+# SSR_SSG.md
 
-Pour CE catalogue (quelques dizaines de produits, mis à jour occasionnellement) :
+1. Choisirais-tu plutôt du SSR, du SSG, ou du pré-rendu ?
 
-1. Choisirais-tu plutôt du SSR, du SSG, ou du pré-rendu ? Justifie en une
-   ou deux phrases en t'appuyant sur la fréquence de mise à jour du contenu.
+   Du SSG (ou du pré-rendu). Le catalogue fait quelques dizaines de produits
+   et ne change qu'occasionnellement : on peut générer les pages HTML une fois
+   au build et les redéployer à chaque modification. Les crawlers et les bots
+   des réseaux sociaux reçoivent directement le bon `<title>` et les balises
+   `og:*` sans exécuter de JavaScript, et il n'y a pas de serveur à faire
+   tourner à chaque visite.
 
-2. Si demain ce site affichait un **stock en temps réel** (quantité
-   disponible qui change à chaque commande), ce choix changerait-il ? Pourquoi ?
+2. Si le site affichait un stock en temps réel, ce choix changerait-il ?
+
+   Pas pour les pages elles-mêmes : le titre, la description et le contenu
+   qui compte pour le référencement restent statiques, donc le SSG reste
+   valable. Par contre le stock ne doit pas être figé dans le HTML du build.
+   Je le chargerais côté navigateur (appel à une API après l'affichage). Si on
+   voulait vraiment le stock dans le HTML, il faudrait passer au SSR ou à une
+   régénération très fréquente, mais ça coûte plus cher et le stock n'apporte
+   rien au référencement.

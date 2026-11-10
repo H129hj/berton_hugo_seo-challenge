@@ -1,16 +1,17 @@
-# SEA_BRIEF.md : bonus
+# SEA_BRIEF.md
 
-Le vélo électrique pliable se vend bien en boutique mais peu en ligne. Le
-budget SEA (Google Ads) est de 500€/mois.
+Requête visée : "velo electrique pliable pas cher"
 
-Rédige, pour la requête commerciale "velo electrique pliable pas cher" :
+- **Titre d'annonce** (23 caractères) : `Vélo électrique pliable`
+- **Description** (83 caractères) : `Pliable en 10 s, 60 km d'autonomie, livraison offerte. Découvrez-le chez CycloShop.`
+- **3 mots-clés complémentaires** :
+  - `comment choisir un vélo électrique pliable` (informationnel)
+  - `meilleur vélo électrique pliable` (commercial : la personne compare avant d'acheter)
+  - `acheter vélo électrique pliable` (transactionnel : prête à acheter)
 
-- **1 titre d'annonce** (30 caractères max)
-- **1 description** (90 caractères max)
-- **3 mots-clés complémentaires** à cibler, en t'appuyant sur les 4 types
-  d'intention de recherche vus en quête `seo-02` (au moins un mot-clé
-  informationnel, un commercial, un transactionnel)
-
-> Rappel : le SEA complète le SEO, il ne le remplace pas : un bon score
-> Quality Score Google Ads dépend aussi de la pertinence de la page
-> d'atterrissage, pas seulement de l'annonce.
+Remarque : la page d'atterrissage doit être la fiche produit
+`/produits/velo-electrique-pliable`, pas la page d'accueil. Le Quality Score
+dépend de la cohérence entre l'annonce et la page, donc le titre et la
+description de la fiche reprennent les mêmes mots que l'annonce. J'ai laissé
+de côté "pas cher" dans l'annonce parce que le prix (899 €) n'est pas
+vraiment bas, ça risquerait de décevoir le visiteur.
